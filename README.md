@@ -203,6 +203,20 @@ This will generate out a changeset, about the state of our infrasturcture and wh
 
 We can output this changeset ie. "plan" to be passed to an apply, but often you can just ignore outputting.
 
+**Note** When creating the S3 bucket we discovered we could not use uppercase letters and we had to change our block to set uppercase to false and lowercase to true.
+
+
+
+```
+resource "random_string" "bucket_name" {
+  lower = true
+  upper = false
+  length           = 32
+  special          = false
+}
+```
+https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string
+
 #### Terraform Apply
 
 `terraform apply`
