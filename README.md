@@ -203,6 +203,20 @@ This will generate out a changeset, about the state of our infrasturcture and wh
 
 We can output this changeset ie. "plan" to be passed to an apply, but often you can just ignore outputting.
 
+**Note** When creating the S3 bucket we discovered we could not use uppercase letters and we had to change our block to set uppercase to false and lowercase to true.
+
+
+
+```
+resource "random_string" "bucket_name" {
+  lower = true
+  upper = false
+  length           = 32
+  special          = false
+}
+```
+https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string
+
 #### Terraform Apply
 
 `terraform apply`
@@ -210,13 +224,20 @@ This will run a plan and pass the changeset to be executed by terraform. Apply s
 
 If we want to automatically approve an apply we can provide the auto approve flag eg. `terraform apply --auto-approve`
 
-### Terraform Lock Files
+#### Terraform Destroy
+
+`terraform destroy`
+This will destroy resources.
+
+You can also use the auto approve flag to skip the approve prompt. eg. `terraform apply --auto-approve`
+
+#### Terraform Lock Files
 
 `.terraform.lock.hcl` contains the locked versioning for the providers or modules that should be used with this project.
 
 The Terraform Lock File **should be committed** to your Version Control System (VSC) eg. Github
 
-### Terraform State Files
+#### Terraform State Files
 
 `.terraform.tfstate` contain information about the current state of your infrastructure.
 
