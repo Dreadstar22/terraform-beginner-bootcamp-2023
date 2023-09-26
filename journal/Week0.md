@@ -1,5 +1,37 @@
 # Terraform Beginner Bootcamp 2023 - Week 0
 
+- [Terraform Beginner Bootcamp 2023 - Week 0](#terraform-beginner-bootcamp-2023---week-0)
+  * [Semantic Versioning :mage:](#semantic-versioning--mage-)
+  * [Installed The Terraform CLI](#installed-the-terraform-cli)
+    + [Considerations with the Terraform CLI changes](#considerations-with-the-terraform-cli-changes)
+    + [Considerations for Linux Distributions](#considerations-for-linux-distributions)
+    + [Refactoring into Bash Scripts](#refactoring-into-bash-scripts)
+      - [Shebang](#shebang)
+  * [Execution Considerations](#execution-considerations)
+      - [Linux Permissions Considerations](#linux-permissions-considerations)
+    + [Github Lifecycle (Before, Init, Command)](#github-lifecycle--before--init--command-)
+    + [Working With Env Vars](#working-with-env-vars)
+      - [env command](#env-command)
+      - [Setting and Unsetting Env Vars](#setting-and-unsetting-env-vars)
+      - [Printing Vars](#printing-vars)
+      - [Scoping of Env Var](#scoping-of-env-var)
+      - [Persisting env vars in Gitpod](#persisting-env-vars-in-gitpod)
+    + [AWS CLI Installation](#aws-cli-installation)
+  * [Terraform Basics](#terraform-basics)
+    + [Terraform Registry](#terraform-registry)
+  * [Terraform Console](#terraform-console)
+      - [Terraform Init](#terraform-init)
+      - [Terraform Plan](#terraform-plan)
+      - [Terraform Apply](#terraform-apply)
+      - [Terraform Destroy](#terraform-destroy)
+      - [Terraform Lock Files](#terraform-lock-files)
+      - [Terraform State Files](#terraform-state-files)
+    + [Terraform Directory](#terraform-directory)
+  * [Issues with Terraform Cloud login and Gitpod Workspace](#issues-with-terraform-cloud-login-and-gitpod-workspace)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 ## Semantic Versioning :mage:
 
 This project is going to utilize semantic versioning for its tagging.
