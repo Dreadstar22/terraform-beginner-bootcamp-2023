@@ -1,6 +1,7 @@
 # Terraform Beginner Bootcamp 2023
 
-![architectural-diagram](https://github.com/omenking/terraform-beginner-bootcamp-2023/assets/7776/ab015431-2d14-4910-aa37-be4807b2b905)
+![Architectural Diagram](https://github.com/Dreadstar22/terraform-beginner-bootcamp-2023/assets/66575153/a8a06958-7a77-400e-97b5-b15ea84ef0f0)
+
 
 
 ## Weekly Journals
